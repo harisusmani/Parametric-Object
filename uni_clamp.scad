@@ -1,8 +1,8 @@
 //All Units are in mm, Import as STL with Unit=mm
 
-R=1.9; //Radius of Pipe in Inches
+R=1.9; //Radius of Pipe in Inches [2.375,1.9,1.660,1.315]
 R_mm=R*25.4; //Converted to mm!
-S=1.2; //Determines Strength of Clamp in Percentage
+S=1.2; //Determines Strength of Clamp in Percentage-FIXED!
 T=3; //Space for Tightening [0:5]
 M=5; //Nut Type M[4,5,6]
 
