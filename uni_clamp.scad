@@ -3,11 +3,20 @@
 
 //All Units are in mm, Import as STL with Unit=mm
 
-R=1.9; //Radius of Pipe in Inches [2.375,1.9,1.660,1.315]
+/* [Main Settings] */
+//Radius of Pipe in Inches (Schedule 40)
+R=1.9; //[2.375:2"PVC,1.9:1-1/2"PVC,1.660:1-1/4"PVC,1.315:1"PVC]
+
+//Space for Tightening
+T=3; //[0:5]
+
+//Nut Size
+M=5; //[4,5,6]
+
+/////////////////////////////////////////////////////////////////////////////
 R_mm=R*25.4; //Converted to mm!
-S=1.2; //Determines Strength of Clamp in Percentage-FIXED!
-T=3; //Space for Tightening [0:5]
-M=5; //Nut Type M[4,5,6]
+//Strength of Clamp (Fixed)
+S=1.2; // [1.2] Determines Strength of Clamp in Percentage-FIXED!
 
 /////////////////////////////////////////////////////////////////////////////
 //Hexagonal Module from shapes.scad, http://svn.clifford.at/openscad/trunk/libraries/shapes.scad by Catarina Mota
@@ -101,7 +110,4 @@ minkowski() //Fillet
 
 }
 
-smooth=360;
-
-
-// preview[view: south, tilt: top]
+//preview[view: north, tilt: top];
